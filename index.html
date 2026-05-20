@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conroe Elite Painting | Premium Residential & Commercial Painters Conroe, TX</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Config for brand custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',     // Slate 900
+                            navy: '#0b2545',     // Deep Premium Navy
+                            blue: '#134074',     // Rich Slate Blue
+                            accent: '#eab308',   // Bright Amber/Gold for paint vibes
+                            soft: '#f4f6f9',     // Light modern gray
+                            cream: '#fefcfb',     // Off-white surface
+                            brown: '#2a3139'     // Brown
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans text-brand-dark bg-brand-cream antialiased">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo Section -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div
+                        class="w-11 h-11 bg-brand-navy rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:bg-brand-blue transition-all duration-300">
+                        <i class="fa-solid fa-paint-roller text-brand-accent"></i>
+                    </div>
+                    <div>
+                        <span class="block text-xl font-extrabold tracking-tight text-brand-navy leading-none">CONROE
+                            ELITE</span>
+                        <span
+                            class="block text-xs font-semibold tracking-wider text-brand-accent uppercase mt-0.5">Painting
+                            Co.</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-sm font-semibold text-gray-700 hover:text-brand-blue transition">About
+                        Us</a>
+                    <a href="#services" class="text-sm font-semibold text-gray-700 hover:text-brand-blue transition">Our
+                        Services</a>
+                    <a href="#comparison"
+                        class="text-sm font-semibold text-gray-700 hover:text-brand-blue transition">Before & After</a>
+                    <a href="#estimator"
+                        class="text-sm font-semibold text-gray-700 hover:text-brand-blue transition">Cost Estimator</a>
+                    <a href="#portfolio"
+                        class="text-sm font-semibold text-gray-700 hover:text-brand-blue transition">Our Work</a>
+                    <a href="#testimonials"
+                        class="text-sm font-semibold text-gray-700 hover:text-brand-blue transition">Reviews</a>
+                </nav>
+
+                <!-- Call to Action -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="tel:9365550190"
+                        class="text-brand-navy hover:text-brand-blue font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-brand-accent"></i> (936) 555-0190
+                    </a>
+                    <a href="#quote"
+                        class="bg-brand-accent hover:bg-yellow-500 text-brand-navy font-bold px-5 py-2.5 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-0.5">
+                        Free Estimate
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-btn"
+                    class="md:hidden flex items-center justify-center p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu"
+            class="hidden md:hidden border-t border-gray-100 bg-white shadow-lg absolute w-full left-0 py-4 px-6 space-y-3 transition duration-300">
+            <a href="#about" class="block py-2 text-base font-semibold text-gray-800 hover:text-brand-blue">About Us</a>
+            <a href="#services" class="block py-2 text-base font-semibold text-gray-800 hover:text-brand-blue">Our
+                Services</a>
+            <a href="#comparison" class="block py-2 text-base font-semibold text-gray-800 hover:text-brand-blue">Before
+                & After</a>
+            <a href="#estimator" class="block py-2 text-base font-semibold text-gray-800 hover:text-brand-blue">Cost
+                Estimator</a>
+            <a href="#portfolio" class="block py-2 text-base font-semibold text-gray-800 hover:text-brand-blue">Our
+                Work</a>
+            <a href="#testimonials"
+                class="block py-2 text-base font-semibold text-gray-800 hover:text-brand-blue">Reviews</a>
+            <div class="pt-4 border-t border-gray-100 space-y-4">
+                <a href="tel:9365550190"
+                    class="flex items-center justify-center gap-2 w-full text-center py-2.5 rounded-xl border border-brand-navy text-brand-navy font-bold">
+                    <i class="fa-solid fa-phone text-brand-accent"></i> Call (936) 555-0190
+                </a>
+                <a href="#quote"
+                    class="block w-full text-center bg-brand-navy hover:bg-brand-blue text-white py-2.5 rounded-xl font-bold shadow-md">
+                    Get Free Estimate
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-brand-brown text-white overflow-hidden py-18 lg:py-28">
+        <!-- Decorative background patterns -->
+        <div class="absolute inset-0 opacity-10">
+            <div
+                class="absolute top-1/2 left-0 w-96 h-96 bg-brand-accent rounded-full filter blur-3xl transform -translate-y-1/2">
+            </div>
+            <div class="absolute top-10 right-10 w-80 h-80 bg-brand-blue rounded-full filter blur-3xl"></div>
+        </div>
+        <!-- Subtle linear background overlay -->
+        <div class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-25"
+            style="background-image: url('images/hero-bg.jpg');"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full text-brand-accent text-sm font-semibold tracking-wide border border-white/15">
+                        <i class="fa-solid fa-star"></i> Conroe's Five-Star Rated Painters
+                    </div>
+                    <h1
+                        class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white font-display">
+                        Transforming Homes & Businesses in <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-yellow-300">Conroe,
+                            TX</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-300 font-light max-w-2xl mx-auto lg:mx-0">
+                        Premium interior and exterior painting tailored to endure the Texas weather. Fully licensed,
+                        insured, and locally trusted throughout Montgomery County.
+                    </p>
+
+                    <!-- Quick Benefits badges -->
+                    <div class="flex justify-center md:justify-start gap-3 pt-2 text-left max-w-lg mx-auto lg:mx-0">
+                        <div class="flex items-center gap-2 text-xs sm:text-sm text-slate-300">
+                            <i class="fa-solid fa-circle-check text-brand-accent"></i>
+                            <span>3-Year Warranty</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm text-slate-300">
+                            <i class="fa-solid fa-circle-check text-brand-accent"></i>
+                            <span>Licensed & Insured</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm text-slate-300">
+                            <i class="fa-solid fa-circle-check text-brand-accent"></i>
+                            <span>Sherwin Williams Paint</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#estimator"
+                            class="bg-brand-accent hover:bg-yellow-500 text-brand-navy text-lg font-bold px-8 py-4 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 transform hover:-translate-y-1">
+                            <i class="fa-solid fa-calculator"></i> Calculate Cost Online
+                        </a>
+                        <a href="#quote"
+                            class="bg-white/10 hover:bg-white/20 text-white border border-white/20 text-lg font-bold px-8 py-4 rounded-xl shadow-lg transition duration-300 flex items-center justify-center gap-2 transform hover:-translate-y-1">
+                            Schedule Onsite Consultation
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image / Visual Badge -->
+                <div class="lg:col-span-5 relative mt-8 lg:mt-0">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Elegant frame shadow styling -->
+                        <div
+                            class="absolute -inset-2 bg-gradient-to-r from-brand-accent to-brand-blue rounded-2xl blur-lg opacity-40 animate-pulse">
+                        </div>
+                        <div class="relative p-3 rounded-2xl shadow-2xl">
+                            <img src="images/hero-image.png" alt="Beautiful residential painting"
+                                class="rounded-xl w-full object-cover aspect-[4/3] shadow-inner">
+
+                            <!-- Mini trust float element -->
+                            <div
+                                class="absolute -bottom-5 -right-5 bg-white text-brand-dark p-4 rounded-xl shadow-2xl border border-gray-100 flex items-center gap-3">
+                                <div
+                                    class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                                    <i class="fa-solid fa-shield-halved text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Satisfaction
+                                    </p>
+                                    <p class="font-bold text-sm text-brand-navy">100% Guaranteed</p>
+                                </div>
+                            </div>
+
+                            <!-- Secondary mini float -->
+                            <div
+                                class="absolute -top-5 -left-5 bg-brand-navy text-white p-3.5 rounded-xl shadow-2xl flex items-center gap-3">
+                                <p class="text-2xl font-black text-brand-accent">15+</p>
+                                <p class="text-xs font-semibold leading-tight text-slate-300">Years serving<br>Conroe
+                                    Area</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Partners & Highlights Section -->
+    <section class="bg-white py-10 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-sm font-semibold text-gray-400 uppercase tracking-widest text-center md:text-left">
+                    Recognized Locally & Utilizing Industry Standard Products
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center justify-center opacity-70">
+                    <!-- Brand Names/Icons -->
+                    <div class="flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paint-roller text-gray-500 text-xl"></i>
+                        <span class="font-bold text-gray-600 text-sm tracking-tight">Sherwin-Williams</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-brush text-gray-500 text-xl"></i>
+                        <span class="font-bold text-gray-600 text-sm tracking-tight">Benjamin Moore</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-house-circle-check text-gray-500 text-xl"></i>
+                        <span class="font-bold text-gray-600 text-sm tracking-tight">Conroe Chamber</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-shield text-gray-500 text-xl"></i>
+                        <span class="font-bold text-gray-600 text-sm tracking-tight">EPA Lead Safe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-brand-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                <!-- Gallery Collage of local work -->
+                <div class="order-2 lg:order-1 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <img src="images/prep-interior.jpg" alt="Home interior prep"
+                            class="rounded-xl shadow-md h-48 w-full object-cover">
+                        <img src="images/molding.jpg" alt="Beautifully painted molding"
+                            class="rounded-xl shadow-md h-64 w-full object-cover">
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <img src="images/painters.jpg" alt="Painters hard at work"
+                            class="rounded-xl shadow-md h-64 w-full object-cover">
+                        <img src="images/exterior-modern.jpg" alt="Completed modern home exterior"
+                            class="rounded-xl shadow-md h-48 w-full object-cover">
+                    </div>
+                </div>
+
+                <!-- About Text -->
+                <div class="order-1 lg:order-2 space-y-6">
+                    <div
+                        class="inline-block px-3 py-1 bg-brand-blue/10 rounded-full text-brand-blue text-xs font-bold uppercase tracking-wider">
+                        Conroe's Own Painters
+                    </div>
+                    <h2
+                        class="text-3xl sm:text-4xl font-extrabold text-brand-navy font-display tracking-tight leading-tight">
+                        Professional Craftsmanship Meeting True Southern Hospitality
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        At **Conroe Elite Painting**, we're not just contractors; we're your neighbors. Proudly based
+                        right here in Conroe, TX, we serve homeowners and businesses from the shores of Lake Conroe to
+                        the vibrant neighborhoods of Montgomery, Willis, and The Woodlands.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        We understand that the unforgiving East Texas heat and humidity require specific knowledge,
+                        preparation, and premium materials to ensure your paint job lasts. That's why we never cut
+                        corners on prep work—we pressure wash, scrape, caulk, prime, and patch everything to guarantee
+                        maximum paint adhesion and protection.
+                    </p>
+
+                    <!-- Core Pillars / Why Choose Us -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex gap-3">
+                            <div
+                                class="w-10 h-10 bg-brand-accent/20 rounded-lg flex items-center justify-center text-brand-navy shrink-0">
+                                <i class="fa-solid fa-people-carry-box"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-navy">Local & Reliable</h4>
+                                <p class="text-xs text-gray-500">Committed to local punctuality and direct customer
+                                    support.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <div
+                                class="w-10 h-10 bg-brand-accent/20 rounded-lg flex items-center justify-center text-brand-navy shrink-0">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-navy">Meticulous Cleanliness</h4>
+                                <p class="text-xs text-gray-500">We shield your furnishings and leave zero cleanup mess
+                                    behind.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <div
+                                class="w-10 h-10 bg-brand-accent/20 rounded-lg flex items-center justify-center text-brand-navy shrink-0">
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-navy">Transparent Pricing</h4>
+                                <p class="text-xs text-gray-500">Upfront honest pricing options with absolutely no
+                                    hidden fees.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <div
+                                class="w-10 h-10 bg-brand-accent/20 rounded-lg flex items-center justify-center text-brand-navy shrink-0">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-navy">Superior Warranty</h4>
+                                <p class="text-xs text-gray-500">Every project is backed by our full multi-year
+                                    workmanship warranty.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Header text -->
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span
+                    class="text-brand-accent font-bold text-xs uppercase tracking-widest bg-yellow-100 px-3 py-1 rounded-full">Our
+                    Professional Specialties</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-navy font-display tracking-tight">
+                    Our Top-Tier Painting Services
+                </h2>
+                <p class="text-gray-500 text-lg">
+                    Whether updating a cozy bedroom, refreshing your storefront, or restoring dynamic siding, we deliver
+                    impeccable, high-end results.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Service 1 -->
+                <div
+                    class="group relative bg-brand-cream border border-gray-100 rounded-2xl p-8 hover:shadow-2xl hover:border-brand-blue/20 transition-all duration-300 transform hover:-translate-y-1">
+                    <div
+                        class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-house text-xl text-brand-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Residential Interior</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Walls, ceilings, trim, crown molding, and customized drywall repairs. We carefully handle all
+                        prep work and heavy lifting.
+                    </p>
+                    <div
+                        class="flex items-center text-brand-blue font-bold text-sm group-hover:text-brand-accent transition">
+                        Learn more <i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition duration-200"></i>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="group relative bg-brand-cream border border-gray-100 rounded-2xl p-8 hover:shadow-2xl hover:border-brand-blue/20 transition-all duration-300 transform hover:-translate-y-1">
+                    <div
+                        class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-sun text-xl text-brand-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Residential Exterior</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Power washing, scraping, caulking, painting siding, trim, brick, stucco, and fascias with
+                        resilient Sherwin-Williams materials.
+                    </p>
+                    <div
+                        class="flex items-center text-brand-blue font-bold text-sm group-hover:text-brand-accent transition">
+                        Learn more <i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition duration-200"></i>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="group relative bg-brand-cream border border-gray-100 rounded-2xl p-8 hover:shadow-2xl hover:border-brand-blue/20 transition-all duration-300 transform hover:-translate-y-1">
+                    <div
+                        class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-briefcase text-xl text-brand-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Commercial Painting</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Offices, clinics, retail shops, HOAs, and light industrial coatings. Flexible schedules to
+                        prevent downtime for your business operations.
+                    </p>
+                    <div
+                        class="flex items-center text-brand-blue font-bold text-sm group-hover:text-brand-accent transition">
+                        Learn more <i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition duration-200"></i>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="group relative bg-brand-cream border border-gray-100 rounded-2xl p-8 hover:shadow-2xl hover:border-brand-blue/20 transition-all duration-300 transform hover:-translate-y-1">
+                    <div
+                        class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-kitchen-set text-xl text-brand-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Cabinet Refinishing</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Upgrade your kitchen for a fraction of full replacement costs. Fine spray finish guarantees a
+                        factory-grade durable texture.
+                    </p>
+                    <div
+                        class="flex items-center text-brand-blue font-bold text-sm group-hover:text-brand-accent transition">
+                        Learn more <i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition duration-200"></i>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div
+                    class="group relative bg-brand-cream border border-gray-100 rounded-2xl p-8 hover:shadow-2xl hover:border-brand-blue/20 transition-all duration-300 transform hover:-translate-y-1">
+                    <div
+                        class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-tree text-xl text-brand-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Deck & Fence Staining</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Deep-penetrating sealants and colors to protect your exterior investments against direct Texas
+                        humidity and UV weathering.
+                    </p>
+                    <div
+                        class="flex items-center text-brand-blue font-bold text-sm group-hover:text-brand-accent transition">
+                        Learn more <i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition duration-200"></i>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div
+                    class="group relative bg-brand-cream border border-gray-100 rounded-2xl p-8 hover:shadow-2xl hover:border-brand-blue/20 transition-all duration-300 transform hover:-translate-y-1">
+                    <div
+                        class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-soap text-xl text-brand-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Pressure Washing</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Meticulous low & high-pressure treatments to blast away moss, grime, mold, and built-up dirt
+                        from siding, walkways, and patios.
+                    </p>
+                    <div
+                        class="flex items-center text-brand-blue font-bold text-sm group-hover:text-brand-accent transition">
+                        Learn more <i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition duration-200"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Comparison Section -->
+    <section id="comparison" class="py-20 bg-brand-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-4">
+                <span
+                    class="text-brand-blue font-bold text-xs uppercase tracking-widest bg-blue-100 px-3 py-1 rounded-full">See
+                    the Difference</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy font-display tracking-tight">
+                    Our Transformations Speak Volumes
+                </h2>
+                <p class="text-gray-500">
+                    Drag the slider handle below to see exactly how a premium paint restoration revives weathered
+                    exterior paneling.
+                </p>
+            </div>
+
+            <!-- Custom Slider container -->
+            <div class="max-w-4xl mx-auto">
+                <div
+                    class="relative overflow-hidden rounded-2xl shadow-2xl before-after-container aspect-[16/10] bg-gray-200 border-4 border-white select-none">
+
+                    <!-- Before (Base Layer) -->
+                    <img src="images/before-slider.jpg" alt="Before Paint job"
+                        class="w-full h-full object-cover select-none">
+                    <span
+                        class="absolute bottom-4 left-4 bg-brand-dark/80 text-white text-xs font-bold px-3 py-1.5 rounded-md uppercase tracking-wider z-10">Before
+                        Painting</span>
+
+                    <!-- After (Revealed Overlay Layer) -->
+                    <div id="after-wrapper" class="absolute inset-0 overflow-hidden w-1/2 select-none">
+                        <img src="images/after-slider.jpg" alt="After Paint job"
+                            class="absolute top-0 left-0 w-full h-full object-cover select-none max-w-none">
+                        <span
+                            class="absolute bottom-4 right-4 bg-brand-accent text-brand-navy text-xs font-bold px-3 py-1.5 rounded-md uppercase tracking-wider z-10">After
+                            Premium Finish</span>
+                    </div>
+
+                    <!-- Custom Range Slider overlays control -->
+                    <input type="range" min="0" max="100" value="50" id="comparison-slider"
+                        class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30">
+
+                    <!-- Physical Slider bar & button handle indicator -->
+                    <div id="slider-line"
+                        class="absolute top-0 bottom-0 w-1 bg-white shadow-lg pointer-events-none z-20 left-1/2 transform -translate-x-1/2">
+                        <div
+                            class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-10 h-10 bg-white hover:bg-brand-accent hover:text-brand-navy text-brand-blue rounded-full flex items-center justify-center shadow-xl transition-colors duration-200 pointer-events-none border border-gray-200">
+                            <i class="fa-solid fa-arrows-left-right text-sm"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Cost Estimator Tool -->
+    <section id="estimator" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Left copy explaining details -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span
+                        class="text-brand-blue font-bold text-xs uppercase tracking-widest bg-blue-100 px-3 py-1 rounded-full">Instant
+                        Cost Estimate</span>
+                    <h2
+                        class="text-3xl sm:text-4xl font-extrabold text-brand-navy font-display tracking-tight leading-none">
+                        No Surprises. Get Your Quick Online Paint Quote!
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Try our quick interactive calculator to find an approximate estimate for your home project in
+                        Conroe. It factors in area sizing, prep work complexity, and material grade.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-green-500 text-lg mt-0.5"></i>
+                            <p class="text-sm text-gray-500"><strong class="text-brand-navy">Transparent Range:</strong>
+                                Calculations reflect dynamic hourly painting averages across Montgomery County.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-green-500 text-lg mt-0.5"></i>
+                            <p class="text-sm text-gray-500"><strong class="text-brand-navy">Custom Sizing:</strong>
+                                Scale your exact room measurements or square foot totals instantly.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-brand-soft rounded-xl border-l-4 border-brand-accent">
+                        <p class="text-xs text-brand-dark font-medium italic">
+                            *Note: Final prices may shift based on height, extensive drywall cracks, structural damage,
+                            or premium color patterns. Schedule an onsite walkthrough for an exact guaranteed quote!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Interactive Estimator Card -->
+                <div class="lg:col-span-7">
+                    <div class="bg-brand-cream border border-gray-100 p-8 rounded-2xl shadow-2xl relative">
+
+                        <h3 class="text-2xl font-bold text-brand-navy mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-calculator text-brand-accent"></i> Project Cost Calculator
+                        </h3>
+
+                        <div class="space-y-6">
+                            <!-- Project Type Choice -->
+                            <div>
+                                <label class="block text-sm font-bold text-brand-navy mb-3">1. Select Project
+                                    Type</label>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <label
+                                        class="border-2 border-brand-navy bg-white rounded-xl p-4 flex items-center justify-between cursor-pointer hover:border-brand-blue transition"
+                                        id="lbl-interior">
+                                        <div class="flex items-center gap-3">
+                                            <input type="radio" name="project_type" value="interior" checked
+                                                class="accent-brand-navy" id="radio-interior">
+                                            <span class="font-bold text-sm text-brand-navy">Interior Painting</span>
+                                        </div>
+                                        <i class="fa-solid fa-bed text-gray-400"></i>
+                                    </label>
+                                    <label
+                                        class="border border-gray-200 bg-white rounded-xl p-4 flex items-center justify-between cursor-pointer hover:border-brand-blue transition"
+                                        id="lbl-exterior">
+                                        <div class="flex items-center gap-3">
+                                            <input type="radio" name="project_type" value="exterior"
+                                                class="accent-brand-navy" id="radio-exterior">
+                                            <span class="font-bold text-sm text-brand-navy">Exterior Painting</span>
+                                        </div>
+                                        <i class="fa-solid fa-tree-city text-gray-400"></i>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Size Input Slider -->
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <label class="block text-sm font-bold text-brand-navy" id="size-label">2. Surface
+                                        Area Size</label>
+                                    <span class="bg-brand-navy text-white font-bold text-sm px-3 py-1 rounded-lg"
+                                        id="sqft-val">1,200 sq ft</span>
+                                </div>
+                                <input type="range" id="size-slider" min="100" max="5000" step="50" value="1200"
+                                    class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-brand-navy">
+                                <div class="flex justify-between text-xs text-gray-400 mt-1">
+                                    <span>100 sq ft (Single Room)</span>
+                                    <span>5,000 sq ft (Large Estate)</span>
+                                </div>
+                            </div>
+
+                            <!-- Paint Grade/Quality Selection -->
+                            <div>
+                                <label class="block text-sm font-bold text-brand-navy mb-3">3. Premium Paint
+                                    Grade</label>
+                                <select id="paint-grade"
+                                    class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 text-brand-navy font-semibold focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                                    <option value="standard">Standard Durable - Low Sheen / Eggshell</option>
+                                    <option value="premium" selected>Premium Sherwin-Williams SuperPaint® (Most Popular)
+                                    </option>
+                                    <option value="luxury">Ultra-Luxury Sherwin-Williams Emerald® (Life-proof /
+                                        Washable)</option>
+                                </select>
+                            </div>
+
+                            <!-- Estimate Output Panel -->
+                            <div
+                                class="bg-brand-navy text-white rounded-2xl p-6 text-center shadow-lg relative overflow-hidden">
+                                <!-- Background accent circles -->
+                                <div
+                                    class="absolute -right-6 -bottom-6 w-24 h-24 bg-brand-accent/25 rounded-full pointer-events-none">
+                                </div>
+
+                                <p class="text-xs uppercase tracking-widest text-slate-300 font-bold mb-2">Estimated
+                                    Investment Range</p>
+                                <div class="text-3xl sm:text-4xl font-extrabold text-brand-accent" id="calc-range">
+                                    $2,160 - $3,240
+                                </div>
+                                <p class="text-[11px] text-slate-400 mt-2">
+                                    Inclusive of professional labor, master prep, primer, drop cloths, tape, & selected
+                                    premium paint layers.
+                                </p>
+                            </div>
+
+                            <!-- Action Button to Apply Estimate directly -->
+                            <button onclick="applyEstimateToForm()"
+                                class="w-full bg-brand-accent hover:bg-yellow-500 text-brand-navy font-extrabold py-4 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-0.5">
+                                Apply This Estimate to Quote Request <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Work Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-brand-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Header text -->
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+                <span
+                    class="text-brand-blue font-bold text-xs uppercase tracking-widest bg-blue-100 px-3 py-1 rounded-full">Completed
+                    Projects</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy font-display tracking-tight">
+                    Our Showcase of Masterpieces
+                </h2>
+                <p class="text-gray-500">
+                    A showcase of residential, exterior, and cabinetry painting projects executed to absolute perfection
+                    across local properties.
+                </p>
+            </div>
+
+            <!-- Filter buttons -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-10">
+                <button onclick="filterPortfolio('all')"
+                    class="portfolio-btn bg-brand-navy text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-md hover:shadow-lg transition">All
+                    Projects</button>
+                <button onclick="filterPortfolio('interior')"
+                    class="portfolio-btn bg-white text-gray-700 hover:bg-brand-navy hover:text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-sm transition">Interior</button>
+                <button onclick="filterPortfolio('exterior')"
+                    class="portfolio-btn bg-white text-gray-700 hover:bg-brand-navy hover:text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-sm transition">Exterior</button>
+                <button onclick="filterPortfolio('cabinets')"
+                    class="portfolio-btn bg-white text-gray-700 hover:bg-brand-navy hover:text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-sm transition">Cabinets</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+
+                <!-- Item 1 (Interior) -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg border border-gray-100 transition-all duration-300"
+                    data-category="interior">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/exterior-modern.jpg" alt="Living room paint update"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-brand-blue uppercase tracking-wider block mb-1">Residential
+                            Interior</span>
+                        <h4 class="font-bold text-lg text-brand-navy">Modern Craftsman Living Room</h4>
+                        <p class="text-xs text-gray-400 mt-2"><i class="fa-solid fa-location-dot"></i> April Sound,
+                            Conroe, TX</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 (Exterior) -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg border border-gray-100 transition-all duration-300"
+                    data-category="exterior">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/prep-interior.jpg" alt="Beautiful residential exterior"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-brand-blue uppercase tracking-wider block mb-1">Residential
+                            Exterior</span>
+                        <h4 class="font-bold text-lg text-brand-navy">Suburban Exterior Refresh</h4>
+                        <p class="text-xs text-gray-400 mt-2"><i class="fa-solid fa-location-dot"></i> Woodforest,
+                            Conroe, TX</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 (Cabinets) -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg border border-gray-100 transition-all duration-300"
+                    data-category="cabinets">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/molding.jpg" alt="Impeccable painted molding and cabinets"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-brand-blue uppercase tracking-wider block mb-1">Cabinets &
+                            Trim</span>
+                        <h4 class="font-bold text-lg text-brand-navy">Premium Spray Cabinet Finishes</h4>
+                        <p class="text-xs text-gray-400 mt-2"><i class="fa-solid fa-location-dot"></i> Panorama Village,
+                            TX</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 (Interior) -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg border border-gray-100 transition-all duration-300"
+                    data-category="interior">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/painters.jpg" alt="Chic dining room walls"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-brand-blue uppercase tracking-wider block mb-1">Residential
+                            Interior</span>
+                        <h4 class="font-bold text-lg text-brand-navy">Accent Wall & Premium Trim</h4>
+                        <p class="text-xs text-gray-400 mt-2"><i class="fa-solid fa-location-dot"></i> Grand Central
+                            Park, Conroe</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 (Exterior) -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg border border-gray-100 transition-all duration-300"
+                    data-category="exterior">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/exterior-brick.jpg" alt="Beautifully stained siding/patio"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-brand-blue uppercase tracking-wider block mb-1">Residential
+                            Exterior</span>
+                        <h4 class="font-bold text-lg text-brand-navy">High-Durability Brick Painting</h4>
+                        <p class="text-xs text-gray-400 mt-2"><i class="fa-solid fa-location-dot"></i> Lake Conroe, TX
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 6 (Cabinets) -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg border border-gray-100 transition-all duration-300"
+                    data-category="cabinets">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/kitchen-cabinets.jpg" alt="Premium kitchen cabinet upgrade"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-brand-blue uppercase tracking-wider block mb-1">Cabinets &
+                            Trim</span>
+                        <h4 class="font-bold text-lg text-brand-navy">Gourmet Kitchen Face Lift</h4>
+                        <p class="text-xs text-gray-400 mt-2"><i class="fa-solid fa-location-dot"></i> Carriage Hills,
+                            Conroe</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Header -->
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span
+                    class="text-brand-accent font-bold text-xs uppercase tracking-widest bg-yellow-100 px-3 py-1 rounded-full">Client
+                    Reviews</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy font-display tracking-tight">
+                    Recommended by Conroe Homeowners
+                </h2>
+                <p class="text-gray-500">
+                    Discover what neighbors throughout Montgomery County say about our attention to detail and pristine
+                    customer service.
+                </p>
+            </div>
+
+            <!-- Grid layout for reviews -->
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Review 1 -->
+                <div
+                    class="bg-brand-cream border border-gray-100 p-8 rounded-2xl shadow-md hover:shadow-xl transition relative">
+                    <!-- Stars -->
+                    <div class="flex text-brand-accent space-x-1 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-sm italic mb-6">
+                        "Conroe Elite did an absolutely amazing job on our exterior brick and shutters. David and his
+                        crew were highly professional, arrived early, covered our landscape perfectly, and cleaned up
+                        meticulously."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-brand-navy flex items-center justify-center font-bold text-white">
+                            SM
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-brand-navy text-sm">Sarah Miller</h4>
+                            <p class="text-xs text-gray-400">Lake Conroe Resident</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div
+                    class="bg-brand-cream border border-gray-100 p-8 rounded-2xl shadow-md hover:shadow-xl transition relative">
+                    <!-- Stars -->
+                    <div class="flex text-brand-accent space-x-1 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-sm italic mb-6">
+                        "We recently hired them to spray refinish our dated kitchen cabinets. The kitchen feels brand
+                        new and looks completely modern now. Extremely professional craftsmanship!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center font-bold text-white">
+                            JH
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-brand-navy text-sm">James Hudson</h4>
+                            <p class="text-xs text-gray-400">Panorama Village homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div
+                    class="bg-brand-cream border border-gray-100 p-8 rounded-2xl shadow-md hover:shadow-xl transition relative">
+                    <!-- Stars -->
+                    <div class="flex text-brand-accent space-x-1 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-sm italic mb-6">
+                        "The online estimator was very accurate and they matched the pricing range during our onsite
+                        walkthrough. Clean, punctual, and beautiful results. Highly recommend to everyone in Montgomery
+                        County!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-brand-accent text-brand-navy flex items-center justify-center font-bold">
+                            RD
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-brand-navy text-sm">Rebecca Davis</h4>
+                            <p class="text-xs text-gray-400">The Woodlands / Conroe border</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Booking & Quote Section -->
+    <section id="quote" class="py-20 bg-brand-navy text-white relative overflow-hidden">
+        <!-- Overlay patterns -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-brand-accent rounded-full filter blur-3xl"></div>
+            <div class="absolute top-0 left-0 w-96 h-96 bg-brand-blue rounded-full filter blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Left sidebar -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span
+                        class="text-brand-accent font-bold text-xs uppercase tracking-widest bg-white/10 px-3 py-1 rounded-full border border-white/10">Quick
+                        Bookings</span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display leading-tight text-white">
+                        Ready to Start Your Color Makeover?
+                    </h2>
+                    <p class="text-slate-300">
+                        Reach out today to coordinate a free, no-obligation onsite consultation. We'll examine your
+                        walls, help design palettes, provide solid samples, and calculate a guaranteed quote.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <!-- Location info -->
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-brand-accent text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Headquarters</p>
+                                <p class="font-bold text-sm">Conroe, TX 77301</p>
+                            </div>
+                        </div>
+                        <!-- Phone Info -->
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-brand-accent text-lg">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Direct Call</p>
+                                <p class="font-bold text-sm">(936) 555-0190</p>
+                            </div>
+                        </div>
+                        <!-- Email Info -->
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-brand-accent text-lg">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Email Address</p>
+                                <p class="font-bold text-sm">estimates@conroeelitepainting.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Quote Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white text-brand-dark p-8 rounded-2xl shadow-2xl relative">
+
+                        <div id="form-success-alert"
+                            class="hidden mb-6 bg-green-50 border border-green-200 text-green-800 p-5 rounded-xl flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-green-600 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-sm">Thank You! Your Request Has Been Received.</h4>
+                                <p class="text-xs text-green-700 mt-1">Our Conroe estimator team is reviewing your
+                                    details and will call you within 2 business hours to finalize a visit.</p>
+                            </div>
+                        </div>
+
+                        <form id="quote-form" onsubmit="handleFormSubmission(event)" class="space-y-5">
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label
+                                        class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Full
+                                        Name *</label>
+                                    <input type="text" id="form-name" required placeholder="John Doe"
+                                        class="w-full bg-brand-soft border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-blue text-brand-navy font-semibold">
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Phone
+                                        Number *</label>
+                                    <input type="tel" id="form-phone" required placeholder="(936) 555-0190"
+                                        class="w-full bg-brand-soft border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-blue text-brand-navy font-semibold">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Email
+                                    Address *</label>
+                                <input type="email" id="form-email" required placeholder="john@example.com"
+                                    class="w-full bg-brand-soft border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-blue text-brand-navy font-semibold">
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label
+                                        class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Service
+                                        Required *</label>
+                                    <select id="form-service"
+                                        class="w-full bg-brand-soft border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-blue text-brand-navy font-semibold">
+                                        <option value="interior">Interior Painting</option>
+                                        <option value="exterior">Exterior Painting</option>
+                                        <option value="cabinets">Cabinet Refinishing</option>
+                                        <option value="deck">Deck & Fence Staining</option>
+                                        <option value="commercial">Commercial Space</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Preferred
+                                        Sizing (Optional)</label>
+                                    <input type="text" id="form-size" placeholder="e.g. 1500 sq ft or 3 bedrooms"
+                                        class="w-full bg-brand-soft border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-blue text-brand-navy font-semibold">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label
+                                    class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Project
+                                    & Details Notes</label>
+                                <textarea id="form-notes" rows="3"
+                                    placeholder="Tell us about your walls, trim, or colors..."
+                                    class="w-full bg-brand-soft border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-blue text-brand-navy font-semibold"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-brand-navy hover:bg-brand-blue text-white font-extrabold py-4 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-0.5">
+                                Get Your Scheduled Quote <i
+                                    class="fa-solid fa-calendar-check ml-1 text-brand-accent"></i>
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-slate-400 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-12 mb-12">
+
+            <!-- Brand identity -->
+            <div class="col-span-2 md:col-span-1 space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center text-white font-bold text-lg">
+                        <i class="fa-solid fa-paint-roller text-brand-accent"></i>
+                    </div>
+                    <div>
+                        <span class="block text-lg font-bold text-white tracking-tight leading-none">CONROE ELITE</span>
+                        <span
+                            class="block text-[10px] font-semibold text-brand-accent uppercase tracking-widest">Painting
+                            Co.</span>
+                    </div>
+                </div>
+                <p class="text-xs leading-relaxed text-slate-400">
+                    Premium painting company based locally in Conroe, TX. Transforming interior and exterior living
+                    spaces with meticulous attention to detail.
+                </p>
+                <div class="flex space-x-3 pt-2">
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white/5 hover:bg-white/10 hover:text-white flex items-center justify-center transition"><i
+                            class="fa-brands fa-facebook-f text-sm"></i></a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white/5 hover:bg-white/10 hover:text-white flex items-center justify-center transition"><i
+                            class="fa-brands fa-instagram text-sm"></i></a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white/5 hover:bg-white/10 hover:text-white flex items-center justify-center transition"><i
+                            class="fa-brands fa-google text-sm"></i></a>
+                </div>
+            </div>
+
+            <!-- Links column 1 -->
+            <div class="space-y-4">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider">Service Areas</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#" class="hover:text-white transition">Conroe, TX</a></li>
+                    <li><a href="#" class="hover:text-white transition">The Woodlands, TX</a></li>
+                    <li><a href="#" class="hover:text-white transition">Willis, TX</a></li>
+                    <li><a href="#" class="hover:text-white transition">Montgomery, TX</a></li>
+                    <li><a href="#" class="hover:text-white transition">Panorama Village, TX</a></li>
+                </ul>
+            </div>
+
+            <!-- Links column 2 -->
+            <div class="space-y-4">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider">Our Services</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#services" class="hover:text-white transition">Interior Painting</a></li>
+                    <li><a href="#services" class="hover:text-white transition">Exterior Painting</a></li>
+                    <li><a href="#services" class="hover:text-white transition">Cabinet Refinishing</a></li>
+                    <li><a href="#services" class="hover:text-white transition">Deck & Fence Stain</a></li>
+                    <li><a href="#services" class="hover:text-white transition">Pressure Washing</a></li>
+                </ul>
+            </div>
+
+            <!-- Hours -->
+            <div class="col-span-2 md:col-span-1 space-y-4">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider">Business Hours</h4>
+                <ul class="space-y-2 text-xs">
+                    <li class="flex justify-between"><span>Monday - Friday:</span> <span class="text-white">7:00 AM -
+                            6:00 PM</span></li>
+                    <li class="flex justify-between"><span>Saturday:</span> <span class="text-white">8:00 AM - 4:00
+                            PM</span></li>
+                    <li class="flex justify-between"><span>Sunday:</span> <span
+                            class="text-brand-accent font-semibold">Closed</span></li>
+                </ul>
+                <div class="p-3 bg-white/5 rounded-xl border border-white/5">
+                    <p class="text-[11px] text-slate-300 font-semibold"><i
+                            class="fa-solid fa-house-shield text-brand-accent mr-1"></i> Fully Licensed & Insured</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright banner -->
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+            <p>&copy; 2026 Conroe Elite Painting. All Rights Reserved.</p>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dynamic Controls Javascript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
